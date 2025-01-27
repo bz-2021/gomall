@@ -16,5 +16,7 @@ func NewLoginService(ctx context.Context) *LoginService {
 func (s *LoginService) Run(req *user.LoginReq) (resp *user.LoginResp, err error) {
 	// Finish your business logic.
 
-	return
+	return &user.LoginResp{
+		UserId: 12,
+	}, nil
 }
